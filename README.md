@@ -98,6 +98,7 @@ The problems below are similar to what you can expect for the midterm exam.
 
       <details><summary>Solution</summary>
       <p>
+      
       Proof by structural induction on `l1`:
 
       Let `l1 = nil`:
@@ -129,6 +130,7 @@ The problems below are similar to what you can expect for the midterm exam.
 
       <details><summary>Solution</summary>
       <p>
+      
       Proof by structural induction on `l1`:
 
       Let `l1 = nil`:
@@ -171,7 +173,7 @@ The problems below are similar to what you can expect for the midterm exam.
    variables of the expression.
 
    a. ```javascript
-      const x = x + y; const y = x + y; y`
+      const x = x + y; const y = x + y; y
       ```
       
       <details><summary>Solution</summary>
