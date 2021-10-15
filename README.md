@@ -179,6 +179,7 @@ The problems below are similar to what you can expect for the midterm exam.
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       const ^x = x + y; const ^y1 = x1 + y; y1
       ```
@@ -186,12 +187,14 @@ The problems below are similar to what you can expect for the midterm exam.
       </p>
       </details>
 
-   b. ```javascript
+   b. 
+      ```javascript
       const f = (function (x) (const y = x; y)); f(x)
       ```
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       const ^f1 = (function (^x1) (const ^y1 = x1; y1)); f1(x)
       ```
@@ -200,12 +203,14 @@ The problems below are similar to what you can expect for the midterm exam.
       </p>
       </details>
 
-   c. ```javascript
+   c. 
+      ```javascript
       function (x) ((function (x) (x(y)))(x))
       ```
 
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       function (^x1) ((function (^x2) (x2(y)))(x1))
       ```
@@ -218,80 +223,94 @@ The problems below are similar to what you can expect for the midterm exam.
 
 1. Compute the following substitutions. Be careful about potential variable capturing:
 
-   a. ```javascript
+   a. 
+      ```javascript
       (x === y)[3/z]
       ```
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       (x === y)
       ```
       </p>
       </details>
       
-   b. ```javascript
+   b. 
+      ```javascript
       (x === y)[y/x]
       ```
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       (y === y)
       ```
       </p>
       </details>
 
-   c. ```javascript
+   c. 
+      ```javascript
       (const x = x + y; x + y)[2/x]
       ```
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       (const x = 2 + y; x + y)
       ```
       </p>
       </details>
 
-   d. ```javascript
+   d. 
+      ```javascript
       (const x = x + y; x + y)[2/y]
       ```
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       (const x = x + 2; x + 2)
       ```
       </p>
       </details>
 
-   e. ```javascript
+   e. 
+      ```javascript
       (const x = x + y; x + y)[x/y]
       ```
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       (const z = x + x; z + x)
       ```
       </p>
       </details>
 
-   f. ```javascript
+   f. 
+      ```javascript
       ((function (x) (x + y))(y))[2/y]
       ```
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       ((function (x) (x + 2))(2))
       ```
       </p>
       </details>
 
-   g. ```javascript
+   g. 
+      ```javascript
       ((function (x) (x + y))(y))[x/y]
+      
       ```
       
       <details><summary>Solution</summary>
@@ -302,12 +321,14 @@ The problems below are similar to what you can expect for the midterm exam.
       </p>
       </details>
 
-   h. ```javascript
+   h. 
+      ```javascript
       ((function (x) (x + y))(y))[x(y)/y]
       ```
       
       <details><summary>Solution</summary>
       <p>
+      
       ```javascript
       ((function (z) (z + x(y)))(x(y)))
       ```
