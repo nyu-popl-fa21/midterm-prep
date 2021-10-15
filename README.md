@@ -172,7 +172,8 @@ The problems below are similar to what you can expect for the midterm exam.
    defining occurrence of x. Finally, compute the set of free
    variables of the expression.
 
-   a. ```javascript
+   a. 
+      ```javascript
       const x = x + y; const y = x + y; y
       ```
       
