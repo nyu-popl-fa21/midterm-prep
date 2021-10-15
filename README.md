@@ -454,7 +454,7 @@ Derivation of C:
 D:{x -> 3, f -> fdef, y -> 0} |- x + y => 3
 ---------------------------------------------------- EvalCall
         {x -> 3, f -> fdef} |- f(0) => 3
-```javascript
+```
 
 Derivation of D:
 
