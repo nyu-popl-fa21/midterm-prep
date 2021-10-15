@@ -138,7 +138,7 @@ The problems below are similar to what you can expect for the midterm exam.
         reverse(append(l1, l2))
       = reverse(append(nil, l2))
       = reverse(l2)                        -- Def. of append
-      = append(reverse(l2), nil)           -- part (i)
+      = append(reverse(l2), nil)           -- part a
       = append(reverse(l2), reverse(nil))  -- Def. of reverse
       = append(reverse(l2), reverse(l1))
       ```
@@ -152,7 +152,7 @@ The problems below are similar to what you can expect for the midterm exam.
       = reverse(hd :: append(tl, l2))               -- Def. of append
       = append(reverse(append(tl, l2)), hd :: nil)  -- Def of reverse
       = append(append(reverse(l2), reverse(tl)), hd :: nil) -- ind. hyp.
-      = append(reverse(l2), append(reverse(tl), hd :: nil)) -- part (ii)
+      = append(reverse(l2), append(reverse(tl), hd :: nil)) -- part b
       = append(reverse(l2), reverse(hd :: tl))      -- Def. of reverse
       = append(reverse(l2), reverse(l1))
       ```
